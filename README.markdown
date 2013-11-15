@@ -1,46 +1,31 @@
 About
 =====
 
-ack-and-a-half.el provides a simple compilation mode for the perl
-grep-a-like ack (http://petdance.com/ack/).
+ag-and-a-half.el provides a simple compilation mode for [the silver searcher ag](https://github.com/ggreer/the_silver_searcher)
 
 Installation
 ============
 
 Add the following to your .emacs:
 
-    (add-to-list 'load-path "/path/to/ack-and-a-half")
-    (require 'ack-and-a-half)
+    (add-to-list 'load-path "/path/to/ag-and-a-half")
+    (require 'ag-and-a-half)
     ;; Create shorter aliases
-    (defalias 'ack 'ack-and-a-half)
-    (defalias 'ack-same 'ack-and-a-half-same)
-    (defalias 'ack-find-file 'ack-and-a-half-find-file)
-    (defalias 'ack-find-file-same 'ack-and-a-half-find-file-same)
+    (defalias 'ag 'ag-and-a-half)
 
-This will load the `ack-and-a-half` functions, and create shorter
+This will load the `ag-and-a-half` functions, and create shorter
 aliases for them.
+
+Untested Commands
+=================
+
+    (defalias 'ag-same 'ag-and-a-half-same)
+    (defalias 'ag-find-file 'ag-and-a-half-find-file)
+    (defalias 'ag-find-file-same 'ag-and-a-half-find-file-same)
+
+I haven't tried these.  Use at your own risk!
 
 Credits
 =======
 
-ack-and-a-half was created from
-[ack.el](http://rooijan.za.net/code/emacs-lisp/ack-el) and
-[full-ack.el](http://nschum.de/src/emacs/full-ack/).  Both had
-features that I liked, but neither was satisfactory on its own.  Thus
-`ack-and-a-half` was born.
-
-Contributors
-============
-
-Many thanks to the following people for their contributions:
-
-* Alexey Lebedeff
-* Andrew Pennebaker
-* Andrew Stine
-* Derek Chen-Becker
-* Gleb Peregud
-* Kim van Wyk
-* Lars Andersen
-* Ronaldo M. Ferraz
-* Ryan Thompson
-* Simão Mata
+ag-and-a-half was haphazardly hacked up from [ack-and-a-half](https://github.com/jhelwig/ack-and-a-half).  I only ever used the main ack-and-a-half function, so I quickly ported it to ag (mainly through find and replace).
