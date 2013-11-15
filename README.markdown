@@ -8,10 +8,12 @@ Installation
 
 Add the following to your .emacs:
 
-    (add-to-list 'load-path "/path/to/ag-and-a-half")
-    (require 'ag-and-a-half)
-    ;; Create shorter aliases
-    (defalias 'ag 'ag-and-a-half)
+```lisp
+(add-to-list 'load-path "/path/to/ag-and-a-half")
+(require 'ag-and-a-half)
+;; Create shorter aliases
+(defalias 'ag 'ag-and-a-half)
+```
 
 This will load the `ag-and-a-half` functions, and create shorter
 aliases for them.
@@ -19,9 +21,11 @@ aliases for them.
 Untested Commands
 =================
 
-    (defalias 'ag-same 'ag-and-a-half-same)
-    (defalias 'ag-find-file 'ag-and-a-half-find-file)
-    (defalias 'ag-find-file-same 'ag-and-a-half-find-file-same)
+```lisp
+(defalias 'ag-same 'ag-and-a-half-same)
+(defalias 'ag-find-file 'ag-and-a-half-find-file)
+(defalias 'ag-find-file-same 'ag-and-a-half-find-file-same)
+```
 
 I haven't tried these.  Use at your own risk!
 
