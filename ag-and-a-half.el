@@ -219,6 +219,7 @@ confirmed.  If t, then always prompt for the directory to use."
     (plone-mode "plone")
     (python-mode "python")
     (ruby-mode "ruby")
+    (enh-ruby-mode "ruby")
     (scala-mode "scala")
     (scheme-mode "scheme")
     (shell-script-mode "shell")
