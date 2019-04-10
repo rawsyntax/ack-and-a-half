@@ -197,6 +197,7 @@ confirmed.  If t, then always prompt for the directory to use."
     (erlang-mode "erlang")
     (espresso-mode "java")
     (fortran-mode "fortran")
+    (go-mode "go")
     (haskell-mode "haskell")
     (hexl-mode "binary")
     (html-mode "html")
